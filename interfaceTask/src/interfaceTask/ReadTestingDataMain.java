@@ -37,7 +37,7 @@ public class ReadTestingDataMain {
 		}
 		else if(dataType == "db") {
 			String location;
-			System.out.println("Enter database location");
+			System.out.println("Enter database location ");
 			location = scan.nextLine();
 			dbReader.read(location);
 		}
