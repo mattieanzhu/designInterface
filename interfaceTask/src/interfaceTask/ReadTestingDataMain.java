@@ -6,6 +6,7 @@ public class ReadTestingDataMain {
 	private static final CSVReader csvReader = new CSVReader();
 	private static final TXTReader txtReader = new TXTReader();
 	private static final InputReader inputReader = new InputReader();
+	private static final DBReader dbReader = new DBReader();
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String dataType;
@@ -33,6 +34,12 @@ public class ReadTestingDataMain {
 			System.out.println("Enter data String");
 			dataString = scan.nextLine();
 			inputReader.read(dataString);
+		}
+		else if(dataType == "db") {
+			String location;
+			System.out.println("Enter database location");
+			location = scan.nextLine();
+			dbReader.read(location);
 		}
 		else {
 			System.out.println("Error, invalid file type");
