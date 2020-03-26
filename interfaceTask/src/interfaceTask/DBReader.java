@@ -20,7 +20,7 @@ public class DBReader implements ReadTestingData {
 	} catch (SQLException e) {
 		System.out.println("Error, connection not found");
 
-	}	
+	}	l
 }
 	
 	@Override
